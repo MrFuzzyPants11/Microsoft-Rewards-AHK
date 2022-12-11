@@ -2,16 +2,17 @@
 ## WHAT DOES THIS DO: 
 - This script will complete all microsoft reward dailies as well the required searches for a full daily rewards.
 
-## HOW DO I USE IT:
-- Activate the script by double clicking it or opening it with AutoHotkey. 
-- F6 to start the script (configurable hotkey)
-- F7 to terminate the script at any point. The script auto terminates once it completes but if something goes wrong use this. (configurable hotkey)
+## **HOW DO I USE IT**: 
+	Activate the script by double clicking it or opening it with AutoHotkey. 
 
 ## WHAT CAN'T IT DO
 - Complete weekly or event rewards. These are not standardized and therefore cannot be completed using this script
 
 # BEFORE RUNNING *Setup*:
+## WHAT CAN'T IT DO:
+- Complete weekly or event rewards. These are not standardized and therefore cannot be completed using this script
 
+# BEFORE RUNNING *Setup*:
 ## APOLOGIZES:
 - This version of the script only works on Windows computers at 125% scale. 100% functionality for all resolutions will be added on December 14th however, there are no plans for 150+%
 
