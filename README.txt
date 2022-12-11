@@ -3,8 +3,9 @@
 - This script will complete all microsoft reward dailies as well the required searches for a full daily rewards.
 
 ## **HOW DO I USE IT**: 
-	Activate the script by double clicking it or opening it with AutoHotkey. 
-
+- Activate the script by double clicking it or opening it with AutoHotkey. 
+- F6 to start the script (configurable hotkey)
+- F7 to terminate the script at any point. The script auto terminates once it completes but if something goes wrong use this. (configurable hotkey)
 ## WHAT CAN'T IT DO
 - Complete weekly or event rewards. These are not standardized and therefore cannot be completed using this script
 
