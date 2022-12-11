@@ -21,4 +21,4 @@
 - Replace "F6" or "F7" hot keys by right clicking the file > open with > notepad (or prefered text editor). Replace the F6 and F7 respectively on the lines marked "; HOTKEY"
 # AFTER RUNNING *optional changes*:
 - **If YOUR PC DOES NOT LOAD FAST ENOUGH:** You need to change the "Sleeps, value" to higher values (they are in MS). You do this by right clicking the file > open with > notepad (or prefered text editor). 
-  -  note: For all rewards it does not need to load the page for you to get credit so leave those as is. However opening the rewards menu, new searching tab, inspect menu, phone interface, and changing profiles does need to load completely
+  -  Note: For all rewards it does not need to load the page for you to get credit so leave those as is. However opening the rewards menu, new searching tab, inspect menu, phone interface, and changing profiles does need to load completely
