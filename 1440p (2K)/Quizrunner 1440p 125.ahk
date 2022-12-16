@@ -38,25 +38,11 @@ quizCompleter(){
 }
 
 quizrunner() {
-  ; completes dailies
 
-  ; second daily
-  MouseMove, 1500, 1300, 0
-  Click
-  Sleep, 1500
-
-  ; completes quiz
-  MouseMove, 500, 1300, 0
-  Click
-  Sleep, 1000
+  ; completes quiz (all 3 levels)
   quizCompleter()
   quizCompleter()
   quizCompleter()
-
-  ; close 3rd tab
-  MouseMove, 945, 25, 0
-  Click
-  Sleep, 100
 }
 F6:: ; HOTKEY
 

@@ -109,19 +109,8 @@ F6:: ; HOTKEY
 ; runs edge
 run, C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
 Sleep, 5000
-
-; runs script
 RewardRunner()
 
 ExitApp
 
 F7::ExitApp ; HOTKEY
-
-
-
-
-
-
-
-
-

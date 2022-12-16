@@ -37,6 +37,7 @@ RewardRunner() {
   MouseMove, 1500, 1225, 0
   Click
   Sleep, 500
+  
   ; close 3rd tab
   MouseMove, 945, 25, 0
   Click
