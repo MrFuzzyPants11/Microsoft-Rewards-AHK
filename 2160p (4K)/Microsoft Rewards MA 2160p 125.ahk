@@ -52,7 +52,7 @@ RewardRunner() {
   Sleep, 500
 
   ; recursively types a
-  Loop 33
+  Loop 34
   {
     MouseMove, 1100, 270, 0
     Click
@@ -92,7 +92,7 @@ RewardRunner() {
   Sleep, 500
 
   ; recursively types b
-  Loop 19
+  Loop 20
   {
     MouseMove, 1530, 375, 0
     Click

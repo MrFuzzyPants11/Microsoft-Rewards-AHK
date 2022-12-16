@@ -33,6 +33,11 @@ RewardRunner() {
   Click
   Sleep, 500
 
+  ; completes poll (if there is one)
+  MouseMove, X11, Y12, 0
+  Click
+  Sleep, 500
+
   ; close 3rd tab
   MouseMove, X3, Y4, 0
   Click
@@ -52,7 +57,7 @@ RewardRunner() {
   Sleep, 500
 
   ; recursively types a
-  Loop 33
+  Loop 34
   {
     MouseMove, X6, Y7, 0
     Click
@@ -92,7 +97,7 @@ RewardRunner() {
   Sleep, 500
 
   ; recursively types b
-  Loop 19
+  Loop 20
   {
     MouseMove, X10, Y11, 0
     Click

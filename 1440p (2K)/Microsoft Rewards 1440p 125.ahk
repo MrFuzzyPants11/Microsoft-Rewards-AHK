@@ -33,6 +33,10 @@ RewardRunner() {
   Click
   Sleep, 500
 
+  ; completes poll (if there is one)
+  MouseMove, 1500, 1225, 0
+  Click
+  Sleep, 500
   ; close 3rd tab
   MouseMove, 945, 25, 0
   Click
@@ -52,7 +56,7 @@ RewardRunner() {
   Sleep, 500
 
   ; recursively types a
-  Loop 33
+  Loop 34
   {
     MouseMove, 800, 185, 0
     Click
@@ -92,7 +96,7 @@ RewardRunner() {
   Sleep, 500
 
   ; recursively types b
-  Loop 19
+  Loop 20
   {
     MouseMove, 1000, 260, 0
     Click
@@ -111,17 +115,9 @@ F6:: ; HOTKEY
 run, C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
 Sleep, 3000
 
-; runs script
+; Runs reward runner
 RewardRunner()
 
 ExitApp
 
 F7::ExitApp ; HOTKEY
-
-
-
-
-
-
-
-

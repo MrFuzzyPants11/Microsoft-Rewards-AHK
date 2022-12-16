@@ -2,7 +2,11 @@
 ## WHAT DOES THIS DO: 
 - This script will complete all microsoft reward dailies as well the required searches for a full daily rewards.
 ## **HOW DO I USE IT**: 
-- Activate the script by double clicking it or opening it with AutoHotkey. 
+- Activate the script by running the Microsoft Rewards (resolution) (zoom).ahk
+- F6 to start the script (configurable hotkey)
+- F7 to terminate the script at any point. The script auto terminates once it completes but if something goes wrong use this. (configurable hotkey)
+## complete daily quizzes and polls ##
+- While on the rewards page run Quizrunner (resolution) (zoom).ahk
 - F6 to start the script (configurable hotkey)
 - F7 to terminate the script at any point. The script auto terminates once it completes but if something goes wrong use this. (configurable hotkey)
 ## WHAT CAN'T IT DO
