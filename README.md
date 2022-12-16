@@ -26,3 +26,6 @@
 # AFTER RUNNING *optional changes*:
 - **If YOUR PC DOES NOT LOAD FAST ENOUGH:** You need to change the "Sleeps, value" to higher values (they are in MS). You do this by right clicking the file > open with > notepad (or prefered text editor). 
   -  Note: For all rewards it does not need to load the page for you to get credit so leave those as is. However opening the rewards menu, new searching tab, inspect menu, phone interface, and changing profiles does need to load completely
+
+# Temporary Demo Video
+https://youtu.be/Ig1-mUssp-4
