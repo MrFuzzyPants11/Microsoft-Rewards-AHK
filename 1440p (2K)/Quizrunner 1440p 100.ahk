@@ -1,45 +1,45 @@
 quizCompleter(){
   ; selects each result from quiz menu
-  MouseMove, 500, 1300, 0
+  MouseMove, 675, 1300, 0
   Click
   Sleep, 1000
 
-  MouseMove, 500, 1300, 0
+  MouseMove, 675, 1300, 0
   Click
   Sleep, 1000
 
-  MouseMove, 650, 1300, 0
+  MouseMove, 775, 1300, 0
   Click
   Sleep, 1000
 
-  MouseMove, 750, 1300, 0
+  MouseMove, 875, 1300, 0
   Click
   Sleep, 1000
 
-  MouseMove, 900, 1300, 0
+  MouseMove, 975, 1300, 0
   Click
   Sleep, 1000
 
-  MouseMove, 1030, 1300, 0
+  MouseMove, 1075, 1300, 0
   Click
   Sleep, 1000
 
-  MouseMove, 1150, 1300, 0
+  MouseMove, 1175, 1300, 0
   Click
   Sleep, 1000
 
-  MouseMove, 1290, 1300, 0
+  MouseMove, 1275, 1300, 0
   Click
   Sleep, 1000
 
-  MouseMove, 1400, 1300, 0
+  MouseMove, 1375, 1300, 0
   Click
   Sleep, 2000
 }
 
 quizrunner() {
   ; starts quiz
-  MouseMove, 500, 1300, 0
+  MouseMove, 685, 1330, 0
   Click
   Sleep, 2000
 

@@ -38,25 +38,14 @@ quizCompleter(){
 }
 
 quizrunner() {
-  ; completes dailies
 
-  ; second daily
-  MouseMove, X9, Y1, 0
-  Click
-  Sleep, 1500
-
-  ; completes quiz
-  MouseMove, X10, Y1, 0
+  ; completes quiz 3 times for all 3 rounds
+  MouseMove, X1, Y1, 0
   Click
   Sleep, 1000
   quizCompleter()
   quizCompleter()
   quizCompleter()
-
-  ; close 3rd tab (same as close 3rd tab from main document)
-  MouseMove, X11, 25, 0
-  Click
-  Sleep, 100
 
 }
 
@@ -64,8 +53,6 @@ F6:: ; HOTKEY
 
 ; runs script
 quizRunner()
-
-ExitApp
 
 F7::ExitApp ; HOTKEY
 
