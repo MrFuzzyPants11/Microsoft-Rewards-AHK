@@ -1,9 +1,9 @@
 RewardRunner() {
   ; opens rewards page
-  MouseMove, 1700, 165, 0
+  MouseMove, 1745, 155, 0
   Click
   Sleep, 500
-  MouseMove, 1700, 205, 0
+  MouseMove, 1700, 185, 0
   Click
   Sleep, 5000
 
@@ -29,12 +29,12 @@ RewardRunner() {
   Sleep, 200
 
   ; third daily
-  MouseMove, 1500, 900, 0
+  MouseMove, 1400, 900, 0
   Click
   Sleep, 800
 
   ; completes poll (if there is one)
-  MouseMove, 1200, 900, 0
+  MouseMove, 1100, 950, 0
   Click
   Sleep, 500
 
@@ -45,7 +45,7 @@ RewardRunner() {
 
   ; begin typing
   ; open 3rd tab
-  MouseMove, 690, 30, 0
+  MouseMove, 550, 25, 0
   Click
   Sleep, 200
 
@@ -59,7 +59,7 @@ RewardRunner() {
   ; recursively types a
   Loop 34
   {
-    MouseMove, 600, 160, 0
+    MouseMove, 475, 145, 0
     Click
     Send, {Right}
     SendInput, {a}
@@ -85,12 +85,12 @@ RewardRunner() {
   MouseMove, 535, 125, 0
   Click
   Sleep, 200
-  MouseMove, 535, 190, 0
+  MouseMove, 535, 180, 0
   Click
   Sleep, 200
 
   ; begin typing in "phone"
-  MouseMove, 650, 250, 0
+  MouseMove, 650, 220, 0
   Click
   SendInput, {b}
   Send, {enter}
@@ -99,7 +99,7 @@ RewardRunner() {
   ; recursively types b
   Loop 20
   {
-    MouseMove, 700, 215, 0
+    MouseMove, 725, 200, 0
     Click
     Send, {Right}
     SendInput, {b}

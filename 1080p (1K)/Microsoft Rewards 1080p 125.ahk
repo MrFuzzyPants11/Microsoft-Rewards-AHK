@@ -33,6 +33,11 @@ RewardRunner() {
   Click
   Sleep, 800
 
+  ; completes poll (if there is one)
+  MouseMove, 1200, 920, 0
+  Click
+  Sleep, 500
+
   ; close 3rd tab
   MouseMove, 950, 30, 0
   Click
