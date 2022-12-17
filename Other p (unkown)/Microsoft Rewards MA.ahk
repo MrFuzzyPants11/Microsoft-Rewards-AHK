@@ -1,4 +1,8 @@
-RRewardRunner() {
+; Author:
+; Date:
+; Github: https://github.com/MrFuzzyPants11/Microsoft-Rewards-AHK
+
+RewardRunner() {
   ; opens rewards page
   MouseMove, X1, Y1, 0
   Click

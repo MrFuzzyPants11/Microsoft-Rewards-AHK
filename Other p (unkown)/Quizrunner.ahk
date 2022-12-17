@@ -1,3 +1,7 @@
+; Author:
+; Date:
+; Github: https://github.com/MrFuzzyPants11/Microsoft-Rewards-AHK
+
 quizCompleter(){
   ; selects each result from quiz menu
   MouseMove, X1, Y1, 0
@@ -39,10 +43,12 @@ quizCompleter(){
 
 quizrunner() {
 
-  ; completes quiz 3 times for all 3 rounds
+  ; Clicks button to start quiz
   MouseMove, X1, Y1, 0
   Click
   Sleep, 1000
+
+  ; completes quiz 3 times for all 3 rounds
   quizCompleter()
   quizCompleter()
   quizCompleter()

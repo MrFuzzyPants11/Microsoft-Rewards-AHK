@@ -1,3 +1,7 @@
+; Author: MrFuzzyPants11
+; Date: December 16th 2022
+; Github: https://github.com/MrFuzzyPants11/Microsoft-Rewards-AHK
+
 RewardRunner() {
   ; opens rewards page
   MouseMove, 1745, 155, 0
@@ -31,7 +35,7 @@ RewardRunner() {
   ; third daily
   MouseMove, 1400, 900, 0
   Click
-  Sleep, 800
+  Sleep, 5000
 
   ; completes poll (if there is one)
   MouseMove, 1100, 950, 0
