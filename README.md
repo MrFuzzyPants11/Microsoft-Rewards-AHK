@@ -25,7 +25,7 @@
 - Replace "F6" or "F7" hot keys by right clicking the file > open with > notepad (or prefered text editor). Replace the F6 and F7 respectively on the lines marked "; HOTKEY"
 # AFTER RUNNING *optional changes*:
 - **IF EDGE DOES NOT START AUTOMATICALLY:** This probably means you have edge saved under a different file location. Simply edit the "; runs edge" line to have the file path to msedge.exe, or remove this line completely and open edge yourself before running.
-- **If YOUR PC DOES NOT LOAD FAST ENOUGH:** You need to change the "Sleeps, value" to higher values (they are in MS). You do this by right clicking the file > open with > notepad (or prefered text editor). 
+- **If YOUR PC DOES NOT LOAD FAST ENOUGH:** You need to change the "Sleep, value" to higher values (they are in MS). You do this by right clicking the file > open with > notepad (or prefered text editor). 
   -  Note: For all rewards it does not need to load the page for you to get credit so leave those as is. However opening the rewards menu, new searching tab, inspect menu, phone interface, and changing profiles does need to load completely
 - If you are a higher than level 2 (default) rewards level:
   - Change the loop value of "; recursively types a" to be (edge searches + searches)/3 and "; recursively types b" to (mobile searches)/3 respectively
