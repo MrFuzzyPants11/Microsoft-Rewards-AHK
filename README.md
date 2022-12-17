@@ -2,15 +2,16 @@
 ## WHAT DOES THIS DO: 
 - This script will complete all microsoft reward dailies as well the required searches for a full daily rewards.
 - I made this because every other tutorial (video or otherwise) I found either no longer worked or wanted me to download a lot of things I was not comfortable with downloading. This solves both issues as it is infinitely changeable and requires no downloads of files from strangers.
-## **HOW DO I USE IT**: 
-- Activate the script by running the Microsoft Rewards [MA or non-MA] [resolution] [zoom].ahk
-- F6 to start the script (configurable hotkey)
-- F7 to terminate the script at any point. The script auto terminates once it completes but if something goes wrong use this. (configurable hotkey)
-- ### How to complete quizzes ###
+## **HOW DO I USE IT**:
+- ### Main Script ###
+  - Activate the script by running the Microsoft Rewards [MA or non-MA] [resolution] [zoom].ahk
+  - F6 to start the script (configurable hotkey)
+  - F7 to terminate the script at any point. The script auto terminates once it completes but if something goes wrong use this. (configurable hotkey)
+- ### Quiz Script ###
   - While on the quiz run Quizrunner [resolution] [zoom].ahk
   - F6 to start the script (configurable hotkey)
   - F7 to terminate the script at any point. The script does not terminate after completing so you can easily swap and complete many quizzes at once. (configurable hotkey)
-## WHAT CAN'T IT DO
+## WHAT CAN'T IT DO:
 - Complete weekly or event rewards. These are not standardized and therefore cannot be completed using this script
 # BEFORE RUNNING *Setup*:
 ## **MANDATORY** SETUP: 
@@ -29,5 +30,5 @@
 - If you are a higher than level 2 (default) rewards level:
   - Change the loop value of "; recursively types a" to be (edge searches + searches)/3 and "; recursively types b" to (mobile searches)/3 respectively
 
-# Demo Video
+# Demo Video:
 https://youtu.be/2uWfjv9vO3g
