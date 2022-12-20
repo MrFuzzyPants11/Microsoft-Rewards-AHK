@@ -2,41 +2,43 @@
 ; Date: December 16th 2022
 ; Github: https://github.com/MrFuzzyPants11/Microsoft-Rewards-AHK
 
+F7::ExitApp ; HOTKEY
+
 quizCompleter(){
   ; selects each result from quiz menu
-  MouseMove, 675, 1300, 0
+  MouseMove, 500, 1300, 0
   Click
   Sleep, 1000
 
-  MouseMove, 675, 1300, 0
+  MouseMove, 500, 1300, 0
   Click
   Sleep, 1000
 
-  MouseMove, 775, 1300, 0
+  MouseMove, 650, 1300, 0
   Click
   Sleep, 1000
 
-  MouseMove, 875, 1300, 0
+  MouseMove, 750, 1300, 0
   Click
   Sleep, 1000
 
-  MouseMove, 975, 1300, 0
+  MouseMove, 900, 1300, 0
   Click
   Sleep, 1000
 
-  MouseMove, 1075, 1300, 0
+  MouseMove, 1030, 1300, 0
   Click
   Sleep, 1000
 
-  MouseMove, 1175, 1300, 0
+  MouseMove, 1150, 1300, 0
   Click
   Sleep, 1000
 
-  MouseMove, 1275, 1300, 0
+  MouseMove, 1290, 1300, 0
   Click
   Sleep, 1000
 
-  MouseMove, 1375, 1300, 0
+  MouseMove, 1400, 1300, 0
   Click
   Sleep, 2000
 }
@@ -44,7 +46,7 @@ quizCompleter(){
 quizrunner() {
 
   ; Clicks button to start quiz
-  MouseMove, 685, 1330, 0
+  MouseMove, 500, 1300, 0
   Click
   Sleep, 2000
 
@@ -58,8 +60,6 @@ F6:: ; HOTKEY
 
 ; runs script
 quizRunner()
-
-F7::ExitApp ; HOTKEY
 
 
 
