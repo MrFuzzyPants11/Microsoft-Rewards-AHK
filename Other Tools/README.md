@@ -4,7 +4,7 @@ note: ALL *Other Tools* scripts terminate with F7 (configurable hotkey). They do
 ## QuizRunner
 - Run script
 - Open quiz to be completed
-- Press F6 to activate sctipt
+- Press F6 to activate sctipt (configurable hotkey)
 
 ## ManualSearcher
 - Run script
@@ -13,5 +13,5 @@ note: ALL *Other Tools* scripts terminate with F7 (configurable hotkey). They do
 - Type any letter into search bar and press enter to get to the search page for proper mouse line up.
 - Hover mouse over search bar
 - Press
-  - F6 to activate script for desktop typing
-  - F5 to activate script for mobile typing
+  - F6 to activate script for desktop typing (configurable hotkey)
+  - F5 to activate script for mobile typing (configurable hotkey)
