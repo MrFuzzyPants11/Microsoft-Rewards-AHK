@@ -1,8 +1,36 @@
 ; Author: MrFuzzyPants11
-; Date: December 16th 2022
+; Date: January 12 2023
 ; Github: https://github.com/MrFuzzyPants11/Microsoft-Rewards-AHK
 
-RewardRunner() {
+F5::looper(1) ; HOTKEY (1 signifies quiz exists)
+F6::looper(0) ; HOTKEY
+F7::ExitApp ; HOTKEY
+
+looper(q){
+  ; runs edge
+  run, C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+  Sleep, 3000
+
+  ; Runs on first profile
+  RewardRunner()
+  Sleep, 1000
+
+  ; duplicate below this
+  ; switches profile
+  MouseMove, 2475, 70, 0
+  Click
+  MouseMove, 200, 280, 0 ; change y value here to be lower on duplications (corresponding to profile)
+  Click
+  Sleep, 3000
+
+  ; runs on next profile
+  RewardRunner()
+  ; duplicate above this
+
+  ExitApp
+}
+
+RewardRunner(q) {
   ; opens rewards page
   MouseMove, 2300, 200, 0
   Click
@@ -27,6 +55,19 @@ RewardRunner() {
   Click
   Sleep, 500
 
+  if(q == 1){
+    ; starts quiz
+    Sleep, 4500
+    MouseMove, 500, 1300, 0
+    Click
+    Sleep, 2000
+
+    ; completes quiz (all 3 levels)
+    quizCompleter()
+    quizCompleter()
+    quizCompleter()
+  }
+
   ; close 3rd tab
   MouseMove, 945, 25, 0
   Click
@@ -35,7 +76,7 @@ RewardRunner() {
   ; third daily
   MouseMove, 2000, 1300, 0
   Click
-  Sleep, 5000
+  Sleep, 3000
   
   ; completes poll (if there is one)
   MouseMove, 1500, 1225, 0
@@ -114,30 +155,44 @@ RewardRunner() {
   Send, ^{I}
 }
 
-F6:: ; HOTKEY
-; runs edge
-run, C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
-Sleep, 3000
+quizCompleter(){
+  ; selects each result from quiz menu
+  MouseMove, 500, 1300, 0
+  Click
+  Sleep, 1000
 
-; Runs on first profile
-RewardRunner()
-Sleep, 1000
+  MouseMove, 500, 1300, 0
+  Click
+  Sleep, 1000
 
-; duplicate below this
-; switches profile
-MouseMove, 2475, 70, 0
-Click
-MouseMove, 200, 280, 0 ; change y value here to be lower on duplications (corresponding to profile)
-Click
-Sleep, 3000
+  MouseMove, 650, 1300, 0
+  Click
+  Sleep, 1000
 
-; runs on next profile
-RewardRunner()
-; duplicate above this
+  MouseMove, 750, 1300, 0
+  Click
+  Sleep, 1000
 
-ExitApp
+  MouseMove, 900, 1300, 0
+  Click
+  Sleep, 1000
 
-F7::ExitApp ; HOTKEY
+  MouseMove, 1030, 1300, 0
+  Click
+  Sleep, 1000
+
+  MouseMove, 1150, 1300, 0
+  Click
+  Sleep, 1000
+
+  MouseMove, 1290, 1300, 0
+  Click
+  Sleep, 1000
+
+  MouseMove, 1400, 1300, 0
+  Click
+  Sleep, 2000
+}
 
 
 
