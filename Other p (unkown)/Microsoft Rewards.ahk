@@ -1,8 +1,44 @@
-; Author:
-; Date:
+; Author: MrFuzzyPants11
+; Date: February 05 2023
 ; Github: https://github.com/MrFuzzyPants11/Microsoft-Rewards-AHK
 
-RewardRunner() {
+F4::checker() ; HOTKEY (Used to quickly open and check rewards)
+F5::looper(1) ; HOTKEY (1 signifies quiz exists)
+F6::looper(0) ; HOTKEY (0 signifies it does not)
+F7::ExitApp ; HOTKEY
+
+checker() {
+  run, C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+  Sleep, 3000
+  MouseMove, X1, Y1, 0
+  Click
+}
+
+looper(q){
+  ; runs edge
+  run, C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+  Sleep, 3000
+
+  ; Runs on first profile
+  RewardRunner(q)
+  Sleep, 1000
+
+  ; duplicate/delete below this
+  ; switches profile
+  MouseMove, X11, Y12, 0
+  Click
+  MouseMove, X12, Y13, 0 ; change y value here to be lower on duplications (corresponding to profile)
+  Click
+  Sleep, 3000
+
+  ; runs on next profile
+  RewardRunner(q)
+  ; duplicate/delete above this
+
+  ExitApp
+}
+
+RewardRunner(q) {
   ; opens rewards page
   MouseMove, X1, Y1, 0
   Click
@@ -27,6 +63,20 @@ RewardRunner() {
   Click
   Sleep, 500
 
+  if(q == 1){
+    ; starts quiz
+    Sleep, 6500
+    MouseMove, X14, X15, 0
+    Click
+    Sleep, 2000
+
+    ; completes quiz (all 3 levels)
+    quizCompleter()
+    quizCompleter()
+    quizCompleter()
+  
+  }
+
   ; close 3rd tab
   MouseMove, X3, Y4, 0
   Click
@@ -38,7 +88,7 @@ RewardRunner() {
   Sleep, 500
 
   ; completes poll (if there is one)
-  MouseMove, X11, Y12, 0
+  MouseMove, X13, Y14, 0
   Click
   Sleep, 500
 
@@ -49,7 +99,7 @@ RewardRunner() {
 
   ; begin typing
   ; open 3rd tab
-  MouseMove, X5, Y6, 0
+  MouseMove, X5, Y4, 0
   Click
   Sleep, 100
 
@@ -114,23 +164,41 @@ RewardRunner() {
   Send, ^{I}
 }
 
-F6:: ; HOTKEY
+quizCompleter(){
+  ; selects each result from quiz menu
+  MouseMove, X15, Y16, 0
+  Click
+  Sleep, 1000
 
-; runs edge
-run, C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
-Sleep, 3000
+  MouseMove, X15, Y16, 0
+  Click
+  Sleep, 1000
 
-; runs script
-RewardRunner()
+  MouseMove, X16, Y16, 0
+  Click
+  Sleep, 1000
 
-ExitApp
+  MouseMove, X17, Y16, 0
+  Click
+  Sleep, 1000
 
-F7::ExitApp ; HOTKEY
+  MouseMove, X18, Y16, 0
+  Click
+  Sleep, 1000
 
+  MouseMove, X19, Y16, 0
+  Click
+  Sleep, 1000
 
+  MouseMove, X20, Y16, 0
+  Click
+  Sleep, 1000
 
+  MouseMove, X21, Y16, 0
+  Click
+  Sleep, 1000
 
-
-
-
-
+  MouseMove, X22, Y16, 0
+  Click
+  Sleep, 2000
+}

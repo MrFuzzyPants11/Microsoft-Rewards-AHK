@@ -1,7 +1,8 @@
 ; Author: MrFuzzyPants11
-; Date: December 16th 2022
+; Date: February 05 2023
 ; Github: https://github.com/MrFuzzyPants11/Microsoft-Rewards-AHK
 
+F6::quizRunner() ; HOTKEY
 F7::ExitApp ; HOTKEY
 
 quizCompleter(){
@@ -55,16 +56,3 @@ quizrunner() {
   quizCompleter()
   quizCompleter()
 }
-
-F6:: ; HOTKEY
-
-; runs script
-quizRunner()
-
-
-
-
-
-
-
-

@@ -13,7 +13,7 @@ RewardRunner() {
 
   ; completes dailies
   ; first daily
-  MouseMove, 1300, 1500, 0
+  MouseMove, 1300, 1100, 0
   Click
   Sleep, 500
 
@@ -23,7 +23,7 @@ RewardRunner() {
   Sleep, 100
 
   ; second daily
-  MouseMove, 2000, 1500, 0
+  MouseMove, 2000, 1100, 0
   Click
   Sleep, 500
 
@@ -33,7 +33,7 @@ RewardRunner() {
   Sleep, 100
 
   ; third daily
-  MouseMove, 2700, 1500, 0
+  MouseMove, 2700, 1100, 0
   Click
   Sleep, 500
 
@@ -115,17 +115,23 @@ F6:: ; HOTKEY
 run, C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
 Sleep, 3000
 
-; runs script
+; Runs on first profile
 RewardRunner()
+Sleep, 1000
+
+; duplicate/delete below this
+; switches profile
+Sleep, 1000
+MouseMove, 3720, 100, 0
+Click
+MouseMove, 2000, 400, 0 ; change y value here to be lower on duplications (corresponding to profile)
+Click
+Sleep, 3000
+
+; runs on next profile
+RewardRunner()
+; duplicate/delete above this
 
 ExitApp
 
 F7::ExitApp ; HOTKEY
-
-
-
-
-
-
-
-

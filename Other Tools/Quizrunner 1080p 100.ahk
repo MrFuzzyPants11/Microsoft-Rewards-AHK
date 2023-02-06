@@ -7,51 +7,51 @@ F7::ExitApp ; HOTKEY
 
 quizCompleter(){
   ; selects each result from quiz menu
-  MouseMove, X1, Y1, 0
+  MouseMove, 350, 950, 0
   Click
   Sleep, 1000
 
-  MouseMove, X1, Y1, 0
+  MouseMove, 350, 950, 0
   Click
   Sleep, 1000
 
-  MouseMove, X2, Y1, 0
+  MouseMove, 450, 950, 0
   Click
   Sleep, 1000
 
-  MouseMove, X3, Y1, 0
+  MouseMove, 560, 950, 0
   Click
   Sleep, 1000
 
-  MouseMove, X4, Y1, 0
+  MouseMove, 660, 950, 0
   Click
   Sleep, 1000
 
-  MouseMove, X5, Y1, 0
+  MouseMove, 760, 950, 0
   Click
   Sleep, 1000
 
-  MouseMove, X6, Y1, 0
+  MouseMove, 860, 950, 0
   Click
   Sleep, 1000
 
-  MouseMove, X7, Y1, 0
+  MouseMove, 970, 950, 0
   Click
   Sleep, 1000
 
-  MouseMove, X8, Y1, 0
+  MouseMove, 1070, 950, 0
   Click
   Sleep, 2000
 }
 
 quizrunner() {
 
-  ; Clicks button to start quiz
-  MouseMove, X1, Y1, 0
+  ; starts quiz
+  MouseMove, X14, X15, 0
   Click
-  Sleep, 1000
+  Sleep, 2000
 
-  ; completes quiz 3 times for all 3 rounds
+  ; completes quiz (all 3 levels)
   quizCompleter()
   quizCompleter()
   quizCompleter()

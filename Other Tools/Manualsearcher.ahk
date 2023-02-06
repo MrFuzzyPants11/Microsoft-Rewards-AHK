@@ -1,7 +1,9 @@
 ; Author: MrFuzzyPants11
-; Date: December 28th 2022
+; Date: February 05 2023
 ; Github: https://github.com/MrFuzzyPants11/Microsoft-Rewards-AHK
 
+F5::mobileSearch() ; Hotkey
+F6::desktopSearch() ; Hotkey
 F7::ExitApp ; HOTKEY
 
 desktopSearch(){
@@ -27,7 +29,3 @@ mobileSearch(){
     Sleep, 300
   }
 }
-
-F6::desktopSearch() ; Hotkey
-
-F5::mobileSearch() ; Hotkey

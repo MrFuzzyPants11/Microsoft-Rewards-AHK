@@ -1,3 +1,2 @@
-# BEFORE RUNNING *Setup*:
-## **MANDATORY** SETUP:
-      In microsoft edge, on every account go to settings > appearance. Set 'page zoom' to "100%".
+# BEFORE RUNNING *Information*:
+  The 4k version of the script does not include F4 or F5 commands, or automatic poll completion, I did not add them because I don't think anyone uses this so it's not worth my time Add an issue if you would like it added.

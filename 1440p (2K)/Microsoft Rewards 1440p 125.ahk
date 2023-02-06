@@ -1,18 +1,39 @@
 ; Author: MrFuzzyPants11
-; Date: January 12 2023
+; Date: February 05 2023
 ; Github: https://github.com/MrFuzzyPants11/Microsoft-Rewards-AHK
 
+F4::checker() ; HOTKEY (Used to quickly open and check rewards)
 F5::looper(1) ; HOTKEY (1 signifies quiz exists)
-F6::looper(0) ; HOTKEY
+F6::looper(0) ; HOTKEY (0 signifies it does not)
 F7::ExitApp ; HOTKEY
+
+checker() {
+  run, C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+  Sleep, 3000
+  MouseMove, 2300, 200, 0
+  Click
+}
 
 looper(q){
   ; runs edge
   run, C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
   Sleep, 3000
 
-  ; Runs reward runner
+  ; Runs on first profile
   RewardRunner(q)
+  Sleep, 1000
+
+  ; duplicate below this
+  ; switches profile
+  MouseMove, 2475, 70, 0
+  Click
+  MouseMove, 200, 280, 0 ; change y value here to be lower on duplications (corresponding to profile)
+  Click
+  Sleep, 3000
+
+  ; runs on next profile
+  RewardRunner(q)
+  ; duplicate above this
 
   ExitApp
 }
@@ -38,14 +59,14 @@ RewardRunner(q) {
   Sleep, 100
 
   ; second daily
-  MouseMove, 1500, 1300, 0
+  MouseMove, 1500, 900, 0
   Click
   Sleep, 500
 
   if(q == 1){
     ; starts quiz
-    Sleep, 4500
-    MouseMove, 500, 1300, 0
+    Sleep, 6500
+    MouseMove, 500, 900, 0
     Click
     Sleep, 2000
 
@@ -61,7 +82,7 @@ RewardRunner(q) {
   Sleep, 100
 
   ; third daily
-  MouseMove, 2000, 1300, 0
+  MouseMove, 2000, 900, 0
   Click
   Sleep, 3000
   
